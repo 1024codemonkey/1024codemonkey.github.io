@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1024codemonkey.github.io</id>
     <title>CodeMonkey</title>
-    <updated>2020-01-11T03:22:10.440Z</updated>
+    <updated>2020-08-21T04:53:57.802Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1024codemonkey.github.io"/>
     <link rel="self" href="https://1024codemonkey.github.io/atom.xml"/>
@@ -16,10 +16,7 @@
         <link href="https://1024codemonkey.github.io/post/Hello-Blog">
         </link>
         <updated>2020-01-10T09:49:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>根据文档把博客搭起来了, 以后要养成习惯做好笔记~ ✌️</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>根据文档把博客搭起来了, 以后要养成习惯做好笔记~ ✌️</p>
-<!-- more -->
+        <content type="html"><![CDATA[<!-- more -->
 ]]></content>
     </entry>
 </feed>
