@@ -2,14 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1024codemonkey.github.io</id>
     <title>CodeMonkey</title>
-    <updated>2020-08-21T04:53:57.802Z</updated>
+    <updated>2021-01-20T05:19:31.355Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1024codemonkey.github.io"/>
     <link rel="self" href="https://1024codemonkey.github.io/atom.xml"/>
     <subtitle>天道酬勤</subtitle>
     <logo>https://1024codemonkey.github.io/images/avatar.png</logo>
     <icon>https://1024codemonkey.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, CodeMonkey</rights>
+    <rights>All rights reserved 2021, CodeMonkey</rights>
+    <entry>
+        <title type="html"><![CDATA[学习笔记(一)]]></title>
+        <id>https://1024codemonkey.github.io/post/xue-xi-bi-ji-yi</id>
+        <link href="https://1024codemonkey.github.io/post/xue-xi-bi-ji-yi">
+        </link>
+        <updated>2021-01-20T05:08:34.000Z</updated>
+        <content type="html"><![CDATA[<p>OSI七层网络协议<br>
+OSI参考模型<br>
+应用层,  表示层, 会话层, 传输层, 网络层, 数据链路层, 物理层<br>
+TCP/IP参考模型<br>
+应用层, 传输层, 网络层, 物理层<br>
+TCP/IP协议线<br>
+HTTP,HTTP2, TCP ,IP,Ethernet<br>
+FTP ,  DNS ,  UDP, IP ,Ethernet<img src="https://1024codemonkey.github.io/post-images/1611119962026.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Blog]]></title>
         <id>https://1024codemonkey.github.io/post/Hello-Blog</id>
