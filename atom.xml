@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1024codemonkey.github.io</id>
     <title>CodeMonkey</title>
-    <updated>2021-01-20T05:21:25.071Z</updated>
+    <updated>2021-01-27T06:39:10.655Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1024codemonkey.github.io"/>
     <link rel="self" href="https://1024codemonkey.github.io/atom.xml"/>
@@ -10,6 +10,66 @@
     <logo>https://1024codemonkey.github.io/images/avatar.png</logo>
     <icon>https://1024codemonkey.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CodeMonkey</rights>
+    <entry>
+        <title type="html"><![CDATA[学习笔记(二) redis基础]]></title>
+        <id>https://1024codemonkey.github.io/post/xue-xi-bi-ji-er-redis-ji-chu</id>
+        <link href="https://1024codemonkey.github.io/post/xue-xi-bi-ji-er-redis-ji-chu">
+        </link>
+        <updated>2021-01-27T05:31:07.000Z</updated>
+        <content type="html"><![CDATA[<p>redis  五种数据结构<br>
+String 字符串 ,Hash 哈希,List 列表, Set 集合,SortedSet 有序集合</p>
+<ol>
+<li>
+<p>String 字符串类型<br>
+是redis中最常用的数据类型,一个key对应一个value .<br>
+String 是二进制安全的, redis的string可以包含任何数据, 如数字,字符串, jpg图片或者序列化的对象<br>
+实战的场景:</p>
+<ol>
+<li>缓存:经典实用场景,把常用信息, 字符串,图片或者视频等信息放在redis中,redis作为缓存层,mysql做持久化层,降低mysql的读写压力</li>
+<li>计数器:redis是单线程模型,一个命令执行完才会执行下一个,同时数据可以一步落地到其他数据源</li>
+</ol>
+</li>
+<li>
+<p>session:常见方案 spring session+redis 实现session共享</p>
+</li>
+<li>
+<p>Hash 哈希<br>
+是一个Mapmap, 指值本身又是一种键值对结构, 如 value = {{field1,value1},....{fieldN,valueN}}<br>
+实战场景:<br>
+1.缓存:能直观,相比string更节省空间的缓存信息, 如用户信息, 视频信息等</p>
+</li>
+<li>
+<p>List  列表<br>
+List 说白了就是链表(redis 使用双端链表实现的List ),是有序的,value 可以重复, 可以通过下标来查找对应的value值,左右两边都能进行插入和删除数据<br>
+实战场景:</p>
+<ol>
+<li>timeline:例如微博的时间轴,有人发布微博,用lpush加入时间轴,展示新的列表信息.</li>
+</ol>
+</li>
+<li>
+<p>Set 集合<br>
+集合类型也是用来9报错多个字符串的元素,但和列表不同的是集合中<br>
+1. 不允许 重复数据<br>
+2. 集合中的元素是无序的 不能通过索引下标获取元素<br>
+3. 支持集合间的操作,可以取多个集合取交集,并集, 差集<br>
+实战场景:</p>
+<ol>
+<li>标签(tag),给用户添加标签,或者用户给消息添加标签,这样有同一标签或者类似标签的可以给推荐关注的事或者关注的人</li>
+<li>点赞,或点踩,  收藏等, 可以放到set中实现</li>
+</ol>
+</li>
+<li>
+<p>zset 有序集合<br>
+有序集合和集合有着必然的关系, 保留了集合不能有重复成员的特性,区别是有序集合的元素可以排序,它的每个元素设置一个分数, 作为排序的依据.<br>
+(有序集合中的元素不可以重复,但是score分数可以重复, 就和一个班里的同学学号不能饿重复, 但考试成绩可以相同)<br>
+实战场景:</p>
+<ol>
+<li>排行榜:有序集合的经典实用场景. 例如小说视频等网站需要对用户上传视频做排行榜 ,榜单可以按照用户关注数, 更新时间,字数等打分,做排行.</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[学习笔记(一)]]></title>
         <id>https://1024codemonkey.github.io/post/xue-xi-bi-ji-yi</id>
